@@ -17,4 +17,18 @@ Install the Mount-s3 using .deb file,
 Check the version, 
 # mount-s3 --version
 
+-------------------------------------
+Configuring MountPoint to S3 Bucket: 
+Reference:- https://docs.aws.amazon.com/AmazonS3/latest/userguide/mountpoint-usage.html 
+
+Create the mount directory, 
+# mkdir ./s3-folder 
+
+Mount buckets with the mount-s3 command, 
+# mount-s3 MY-S3-BUCKET ./s3-folder 
+Once we mounted the bucket, check the files are reflecting the folder using "ls -ltr".
+
+To Unmount your bucket use the umount command, 
+#umount ./s3-folder
+
 
