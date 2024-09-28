@@ -1,0 +1,20 @@
+---
+AWS Mount-S3: 
+Mountpoint supports basic file system operations. It can list and read existing files in S3 Buckets and it can create new files. 
+It cannot modify existing files or delete directories.  
+Mountpoint for Amazon S3 is available only for Linux operating systems.
+
+
+Mount-S3 installation: 
+Reference:- https://docs.aws.amazon.com/AmazonS3/latest/userguide/mountpoint-installation.html 
+
+Download the .deb file from the below link, 
+# wget https://s3.amazonaws.com/mountpoint-s3-release/latest/x86_64/mount-s3.deb 
+
+Install the Mount-s3 using .deb file, 
+# sudo apt-get install ./mount-s3.deb 
+
+Check the version, 
+# mount-s3 --version
+
+
